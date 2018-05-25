@@ -1,0 +1,22 @@
+.notFound {
+	width: 100%;
+	min-height: calc(100vh - 140px);
+    text-align: center;
+}
+
+.cont {
+    width: 992px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.statusNumber {
+    padding: 55px 0 0;
+	margin: 0;
+    font-size: 160px;
+}
+
+.statusText {
+    margin: 0;
+    font-size: 32px;
+}

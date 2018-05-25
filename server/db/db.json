@@ -1,0 +1,279 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "img": "assets/pitt.jpg",
+      "name": "Brad",
+      "surname": "Pitt",
+      "birthday": "10-08-1964",
+      "town": "Boston",
+      "phone": "+1(123)200-27-11",
+      "phoneGroup": "office",
+      "email": "pitt@gmail.com",
+      "skype": "pittbrad",
+      "history": [
+        {
+          "date": "25-05-2018",
+          "time": "16.21"
+        },
+        {
+          "date": "25-05-2018",
+          "time": "16.33"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "assets/jolie.jpg",
+      "name": "Angelina",
+      "surname": "Jolie",
+      "birthday": "23-05-1977",
+      "town": "Boston",
+      "phone": "+1(123)359-27-45",
+      "phoneGroup": "office",
+      "email": "jolie@gmail.com",
+      "skype": "angy",
+      "history": []
+    },
+    {
+      "id": 3,
+      "img": "assets/hanks.jpg",
+      "name": "Tom",
+      "surname": "Hanks",
+      "birthday": "20-01-1970",
+      "town": "Berlin",
+      "phone": "+65(188)359-45-45",
+      "phoneGroup": "friend",
+      "email": "hanks@hanks.com",
+      "skype": "hanky",
+      "history": []
+    },
+    {
+      "id": 4,
+      "img": "assets/diCaprio.jpg",
+      "name": "Leo",
+      "surname": "diCaprio",
+      "birthday": "31-03-1973",
+      "town": "Ostin",
+      "phone": "+3(008)111-89-45",
+      "phoneGroup": "work",
+      "email": "dicaprio@aol.com",
+      "skype": "dicaprio",
+      "history": []
+    },
+    {
+      "id": 5,
+      "img": "assets/smith.jpg",
+      "name": "Will",
+      "surname": "Smith",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "smith@smith.com",
+      "skype": "maninblack",
+      "history": []
+    },
+    {
+      "id": 6,
+      "img": "assets/affleck.jpg",
+      "name": "Ben",
+      "surname": "Affleck",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "affleck@usa.com",
+      "skype": "affleck",
+      "history": [
+        {
+          "date": "25-05-2018",
+          "time": "16.11"
+        },
+        {
+          "date": "25-05-2018",
+          "time": "16.11"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "img": "assets/aniston.jpg",
+      "name": "Jenifer",
+      "surname": "Aniston",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "aniston@usa.com",
+      "skype": "aniston",
+      "history": []
+    },
+    {
+      "id": 8,
+      "img": "assets/bellucci.jpg",
+      "name": "Monica",
+      "surname": "Bellucci",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "bellucci@usa.com",
+      "skype": "belucci",
+      "history": [
+        {
+          "date": "25-05-2018",
+          "time": "16.11"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "img": "assets/carrey.jpg",
+      "name": "Jim",
+      "surname": "Carrey",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "carrey@usa.com",
+      "skype": "carrey1",
+      "history": []
+    },
+    {
+      "id": 10,
+      "img": "assets/chan.jpg",
+      "name": "Jacky",
+      "surname": "Chan",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "office",
+      "email": "chan@usa.com",
+      "skype": "jacky",
+      "history": []
+    },
+    {
+      "id": 11,
+      "img": "assets/clooney.jpg",
+      "name": "Jorge",
+      "surname": "Clooney",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "clooney@usa.com",
+      "skype": "clooney",
+      "history": []
+    },
+    {
+      "id": 12,
+      "img": "assets/depp.jpg",
+      "name": "Jonny",
+      "surname": "Depp",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "friends",
+      "email": "depp@usa.com",
+      "skype": "depp",
+      "history": []
+    },
+    {
+      "id": 13,
+      "img": "assets/diesel.jpg",
+      "name": "Vin",
+      "surname": "Diesel",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "diesel@usa.com",
+      "skype": "diesel",
+      "history": []
+    },
+    {
+      "id": 14,
+      "img": "assets/johansson.jpg",
+      "name": "Scarlett",
+      "surname": "Johansson",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "scarlett@usa.com",
+      "skype": "scarlett",
+      "history": []
+    },
+    {
+      "id": 15,
+      "img": "assets/kunis.jpg",
+      "name": "Mila",
+      "surname": "Kunis",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "project",
+      "email": "kunis@usa.com",
+      "skype": "kunis",
+      "history": []
+    },
+    {
+      "id": 16,
+      "img": "assets/mccon.jpg",
+      "name": "Mat",
+      "surname": "McConaughey",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "matty@usa.com",
+      "skype": "mat",
+      "history": [
+        {
+          "date": "25-05-2018",
+          "time": "17.02"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "img": "assets/pattinson.jpg",
+      "name": "Rob",
+      "surname": "Pattinson",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "cinema",
+      "email": "robby@usa.com",
+      "skype": "robby",
+      "history": []
+    },
+    {
+      "id": 18,
+      "img": "assets/sandler.jpg",
+      "name": "Adam",
+      "surname": "Sandler",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "sandler@usa.com",
+      "skype": "sandler",
+      "history": []
+    },
+    {
+      "name": "Ihor",
+      "surname": "Nikitin",
+      "birthday": "06-03-1984",
+      "town": "Dnepr",
+      "phone": "+38(095)200-20-02",
+      "phoneGroup": "developer",
+      "email": "qwerty@i.ua",
+      "skype": "qwerty",
+      "img": "assets/logo.jpg",
+      "history": [],
+      "id": 19
+    }
+  ]
+}

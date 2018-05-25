@@ -1,0 +1,3 @@
+export const SEARCH_BY_ANY_FIELD = 'SEARCH_BY_ANY_FIELD';
+export const SORT_BY_SURNAME = 'SORT_BY_SURNAME';
+export const SORT_BY_GROUP = 'SORT_BY_GROUP';
