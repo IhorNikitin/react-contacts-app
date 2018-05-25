@@ -27,6 +27,7 @@ class UserCreate extends Component {
                         <form
                             className={styles.form}
                             onSubmit={handleSubmit(createUser)}
+                            onKeyPress={(e) => e.key === 'Enter' && e.preventDefault()}
                         >
                             <h3 className={styles.formHeading}>{`${action} User`}</h3>
                             <div className={styles.unit}>
