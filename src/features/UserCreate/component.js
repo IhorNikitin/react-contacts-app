@@ -162,13 +162,13 @@ class UserCreate extends Component {
 
 UserCreate.defaultProps = {
     user: {},
-    id: 0,
+    id: '',
     errMsg: '',
 };
 
 UserCreate.propTypes = {
     user: PropTypes.objectOf(PropTypes.any),
-    id: PropTypes.number,
+    id: PropTypes.string,
     errMsg: PropTypes.string,
     createUser: PropTypes.func.isRequired,
     goBack: PropTypes.func.isRequired,

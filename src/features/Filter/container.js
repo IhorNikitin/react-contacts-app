@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { searchByAnyField, sortBySurname, sortByGroup } from './actions';
-import { fetchUsersThunk, getAllUsersCount, changeCurrentPage } from '../Users/actions';
+import { fetchUsersThunk, upgradeCount, changeCurrentPage } from '../Users/actions';
 
 import { ITEMS_PER_PAGE } from '../../constants';
 
@@ -40,11 +40,11 @@ class FilterContainer extends Component {
     };
 	
     handlerSearchByAnyField = () => {
-        this.props.fetchUsersThunk(`?q=${this.state.inputStr}&_page=1&_limit=${ITEMS_PER_PAGE}`)
+        this.props.fetchUsersThunk(`?q=${this.state.inputStr}`)
             .then(() => {
                 this.props.searchByAnyField(this.state.inputStr);
 				this.props.changeCurrentPage(1);
-                this.props.getAllUsersCount();
+                this.props.upgradeCount(0);
             });
     };
 
@@ -70,5 +70,5 @@ const mapStateToProps = (state) => ({
 
 export default connect(
     mapStateToProps,
-    { searchByAnyField, sortBySurname, sortByGroup, fetchUsersThunk, getAllUsersCount, changeCurrentPage }
+    { searchByAnyField, sortBySurname, sortByGroup, fetchUsersThunk, upgradeCount, changeCurrentPage }
 )(FilterContainer);

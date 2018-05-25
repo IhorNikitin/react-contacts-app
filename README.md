@@ -7,6 +7,14 @@ $ npm start
 ```
 
 2) BACK-END
+
+Need to install nodemon package(globally)!
+
 ```sh
-$ node server/index.js
+$ npm install -g nodemon
+```
+after
+
+```sh
+$ nodemon server/index.js
 ```

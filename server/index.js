@@ -9,7 +9,6 @@ server.use(middlewares);
 server.use((req, res, next) => {
     if (req.method === 'GET' && req.originalUrl === '/users/count') {
         const count = db.users.length;
-        console.log(count);
         res.status(200);
 		res.json({'count': count});
     }

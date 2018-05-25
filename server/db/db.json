@@ -11,16 +11,7 @@
       "phoneGroup": "office",
       "email": "pitt@gmail.com",
       "skype": "pittbrad",
-      "history": [
-        {
-          "date": "25-05-2018",
-          "time": "16.21"
-        },
-        {
-          "date": "25-05-2018",
-          "time": "16.33"
-        }
-      ]
+      "history": []
     },
     {
       "id": 2,
@@ -85,16 +76,7 @@
       "phoneGroup": "business",
       "email": "affleck@usa.com",
       "skype": "affleck",
-      "history": [
-        {
-          "date": "25-05-2018",
-          "time": "16.11"
-        },
-        {
-          "date": "25-05-2018",
-          "time": "16.11"
-        }
-      ]
+      "history": []
     },
     {
       "id": 7,
@@ -120,12 +102,7 @@
       "phoneGroup": "business",
       "email": "bellucci@usa.com",
       "skype": "belucci",
-      "history": [
-        {
-          "date": "25-05-2018",
-          "time": "16.11"
-        }
-      ]
+      "history": []
     },
     {
       "id": 9,
@@ -229,12 +206,7 @@
       "phoneGroup": "business",
       "email": "matty@usa.com",
       "skype": "mat",
-      "history": [
-        {
-          "date": "25-05-2018",
-          "time": "17.02"
-        }
-      ]
+      "history": []
     },
     {
       "id": 17,
@@ -261,19 +233,6 @@
       "email": "sandler@usa.com",
       "skype": "sandler",
       "history": []
-    },
-    {
-      "name": "Ihor",
-      "surname": "Nikitin",
-      "birthday": "06-03-1984",
-      "town": "Dnepr",
-      "phone": "+38(095)200-20-02",
-      "phoneGroup": "developer",
-      "email": "qwerty@i.ua",
-      "skype": "qwerty",
-      "img": "assets/logo.jpg",
-      "history": [],
-      "id": 19
     }
   ]
 }
