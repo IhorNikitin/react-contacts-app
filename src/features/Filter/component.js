@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import { Input, Button } from '../../components';
 
-import styles from './component.scss';
+import styles from './Filter.scss';
 
 const Filter = ({ handlerSortBySurname, handlerSortByGroup, handlerSearchByAnyField, onChange, inputStr }) =>  (
     <section className={styles.filter}>
         <h3 className={styles.heading}>Sorting & Filtering</h3>
         <div className={styles.sorting}>
-            <Button onClick={handlerSortBySurname} addClass={styles.blueSkin}>sortBySurname A-Z</Button>
-            <Button onClick={handlerSortByGroup} addClass={styles.blueSkin}>sortByGroup A-Z</Button>
+            <Button onClick={handlerSortBySurname} addClass={styles.blueSkin}>sortBySurname</Button>
+            <Button onClick={handlerSortByGroup} addClass={styles.blueSkin}>sortByGroup</Button>
         </div>
         <div className={styles.search}>
             <Input

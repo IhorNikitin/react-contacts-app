@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './component.scss';
+import styles from './Users.scss';
 
-import User from './components/user';
-import Pagination from './components/pagination';
+import User from './components/User';
+import Pagination from './components/Pagination';
 import { Button } from '../../components';
 
 const Users = ({ users, count, createUser, deleteUser, editUser, showUserDetails }) => {
