@@ -27,7 +27,7 @@ const Users = ({ users, count, createUser, deleteUser, editUser, showUserDetails
                     )
                 }
             </div>
-            <Pagination itemCount={count} />
+            <Pagination itemCount={count} users={users} />
         </section>
     );
 };

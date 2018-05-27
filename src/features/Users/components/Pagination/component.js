@@ -7,7 +7,6 @@ import { ITEMS_PER_PAGE } from '../../../../constants';
 import styles from './component.scss';
 
 class Pagination extends Component {
-
     state = {
         allPages: Math.ceil(this.props.itemCount / ITEMS_PER_PAGE),
     };
@@ -19,26 +18,31 @@ class Pagination extends Component {
     }
 
     changePage = (target) => {
-        const { sortBySurname, sortByGroup, searchStr, fetchUsersThunk, changeCurrentPage } = this.props;
+        const { changeCurrentPage } = this.props;
         let page = +target.getAttribute('value');
 
         if (page < 1 || page > this.state.allPages) {
             return;
         }
 
+        changeCurrentPage(page);
+        this.getUsersForPage(page);
+    };
+
+    getUsersForPage = (page) => {
+        const { sortBySurname, sortByGroup, searchStr, fetchUsersThunk } = this.props;
         let query = `?_page=${page}&_limit=${ITEMS_PER_PAGE}`;
 
         if (sortBySurname) query = `${query}&_sort=surname&_order=asc`;
         else if (sortByGroup) query = `${query}&_sort=phoneGroup&_order=asc`;
         else if (searchStr) query = `${query}&q=${searchStr}`;
 
-        fetchUsersThunk(query)
-            .then(() => changeCurrentPage(page));
+        fetchUsersThunk(query);
     };
 
     render() {
         const { allPages } = this.state;
-        const { currentPage } = this.props;
+        const { users, currentPage } = this.props;
 
         let pages;
 
@@ -49,6 +53,10 @@ class Pagination extends Component {
         if (allPages) {
             pages = new Array(allPages);
             pages = pages.fill(1).map((el, index) => (index + 1));
+        }
+
+        if (currentPage < allPages && users.length < 5) {
+            this.getUsersForPage(currentPage);
         }
 
         return (

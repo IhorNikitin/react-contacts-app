@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { searchByAnyField, sortBySurname, sortByGroup } from './actions';
-import { fetchUsersThunk, upgradeCount, changeCurrentPage } from '../Users/actions';
+import { fetchUsersThunk, getAllUsersCount, upgradeCount, changeCurrentPage } from '../Users/actions';
 
 import { ITEMS_PER_PAGE } from '../../constants';
 
@@ -40,11 +40,20 @@ class FilterContainer extends Component {
     };
 	
     handlerSearchByAnyField = () => {
-        this.props.fetchUsersThunk(`?q=${this.state.inputStr}`)
+        const { inputStr } = this.state;
+        let limit = '';
+
+        if (!inputStr) {
+            this.props.getAllUsersCount();
+			limit = ITEMS_PER_PAGE;
+        } else {
+            this.props.upgradeCount(0);
+        }
+
+        this.props.fetchUsersThunk(`?q=${inputStr}&_limit=${limit}`)
             .then(() => {
-                this.props.searchByAnyField(this.state.inputStr);
+                this.props.searchByAnyField(inputStr);
                 this.props.changeCurrentPage(1);
-                this.props.upgradeCount(0);
             });
     };
 
@@ -70,5 +79,13 @@ const mapStateToProps = (state) => ({
 
 export default connect(
     mapStateToProps,
-    { searchByAnyField, sortBySurname, sortByGroup, fetchUsersThunk, upgradeCount, changeCurrentPage }
+    {
+        searchByAnyField,
+        sortBySurname,
+        sortByGroup,
+        fetchUsersThunk,
+        getAllUsersCount,
+        upgradeCount,
+        changeCurrentPage
+    }
 )(FilterContainer);

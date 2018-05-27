@@ -23,6 +23,14 @@ export const fetchUsersThunk = (query='') => (
     )
 );
 
+export const fetchOneUserThunk = (query='') => (
+    (dispatch, _, api) => (
+        api(`users${query}`)
+            .then((response) => response.data)
+            .catch(err => toast.error(err.message, { autoClose: false }))
+    )
+);
+
 export const createUserThunk = (body) => (
     (dispatch, _, api) => (
         api(`users`, 'post', body)
