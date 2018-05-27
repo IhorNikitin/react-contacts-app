@@ -3,7 +3,7 @@ import DocumentTitle from 'react-document-title';
 
 import { Filter, Users } from '../../features';
 
-import styles from './MainPage.scss';
+import styles from './component.scss';
 
 const MainPage = (props) => (
     <DocumentTitle title="MAIN PAGE | PHONE BOOK APP" >

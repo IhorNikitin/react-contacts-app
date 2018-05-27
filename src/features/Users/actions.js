@@ -7,7 +7,7 @@ export const getAllUsersCount = () => (
     (dispatch, _, api) => (
         api(`users/count`)
             .then((response) => {
-				dispatch(upgradeCount(response.data));
+                dispatch(upgradeCount(response.data));
             })
             .catch(err => toast.error(err.message, { autoClose: false }))
     )
@@ -28,11 +28,11 @@ export const createUserThunk = (body) => (
         api(`users`, 'post', body)
             .then((response) => {
                 dispatch(addUser(response.data));
-				dispatch(plusCount());
-				dispatch(changeCurrentPage(1));
-				dispatch(fetchUsersThunk(`?_page=1&_limit=${ITEMS_PER_PAGE}`));
+                dispatch(plusCount());
+                dispatch(changeCurrentPage(1));
+                dispatch(fetchUsersThunk(`?_page=1&_limit=${ITEMS_PER_PAGE}`));
             })
-			.then(() => toast.success('SAVE SUCCESS'))
+            .then(() => toast.success('SAVE SUCCESS'))
             .catch(err => toast.error(err.message, { autoClose: false }))
     )
 );
@@ -43,7 +43,7 @@ export const upgradeUserThunk = (body) => (
             .then((response) => {
                 dispatch(editUser(response.data));
             })
-			.then(() => toast.success('UPGRADE SUCCESS'))
+            .then(() => toast.success('UPGRADE SUCCESS'))
             .catch(err => toast.error(err.message, { autoClose: false }))
     )
 );
@@ -53,9 +53,9 @@ export const deleteUserThunk = (id) => (
         api(`users/${id}`, 'delete')
             .then((response) => {
                 dispatch(deleteUser(id));
-				dispatch(minusCount());
+                dispatch(minusCount());
             })
-			.then(() => toast.success('DELETE SUCCESS'))
+            .then(() => toast.success('DELETE SUCCESS'))
             .catch(err => toast.error(err.message, { autoClose: false }))
     )
 );

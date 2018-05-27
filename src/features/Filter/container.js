@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { searchByAnyField, sortBySurname, sortByGroup } from './actions';
-import { fetchUsersThunk, upgradeCount, changeCurrentPage } from '../Users/actions';
+import { fetchUsersThunk, upgradeCount, changeCurrentPage } from '../users/actions';
 
 import { ITEMS_PER_PAGE } from '../../constants';
 
@@ -32,7 +32,7 @@ class FilterContainer extends Component {
     handlerSortByGroup = () => {
         if (!this.props.isSortByGroup) {
             this.props.fetchUsersThunk(`?_page=1&_limit=${ITEMS_PER_PAGE}&_sort=phoneGroup&_order=asc`)
-		        .then(() => {
+                .then(() => {
                     this.props.sortByGroup();
                     this.props.changeCurrentPage(1);
                 });
@@ -43,7 +43,7 @@ class FilterContainer extends Component {
         this.props.fetchUsersThunk(`?q=${this.state.inputStr}`)
             .then(() => {
                 this.props.searchByAnyField(this.state.inputStr);
-				this.props.changeCurrentPage(1);
+                this.props.changeCurrentPage(1);
                 this.props.upgradeCount(0);
             });
     };
@@ -63,9 +63,9 @@ class FilterContainer extends Component {
 }
 
 const mapStateToProps = (state) => ({
-	isSortBySurname: state.filter.sortBySurname,
-	isSortByGroup: state.filter.sortByGroup,
-	searchStr: state.filter.searchStr,
+    isSortBySurname: state.filter.sortBySurname,
+    isSortByGroup: state.filter.sortByGroup,
+    searchStr: state.filter.searchStr,
 });
 
 export default connect(

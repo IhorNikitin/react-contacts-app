@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import DocumentTitle from 'react-document-title';
 
-import styles from './UserInfo.scss';
+import styles from './component.scss';
 
 import { Button } from '../../components';
 import { SERVER_URL } from '../../constants';

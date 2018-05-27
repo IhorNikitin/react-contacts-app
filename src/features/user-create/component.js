@@ -5,7 +5,7 @@ import { Field, reduxForm, initialize } from 'redux-form';
 import DocumentTitle from 'react-document-title';
 import PropTypes from 'prop-types';
 
-import styles from './UserCreate.scss';
+import styles from './component.scss';
 
 import { Button } from '../../components';
 
@@ -175,10 +175,10 @@ UserCreate.propTypes = {
     removeError: PropTypes.func.isRequired,
 };
 
+const withStore = connect(null, { initialize });
+const withForm = reduxForm({ form: 'simple' });
+
 export default compose(
-    connect(
-        null,
-        { initialize }
-    ),
-    reduxForm({ form: 'simple' }),
+    withStore,
+    withForm,
 )(UserCreate);

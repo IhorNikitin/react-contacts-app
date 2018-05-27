@@ -1,11 +1,11 @@
-import Filter from './Filter';
-import Users from './Users';
-import UserInfo from './UserInfo';
-import UserCreate from './UserCreate';
+import Filter from './filter';
+import Users from './users';
+import UserInfo from './user-info';
+import UserCreate from './user-create';
 
 export {
     Filter,
-	Users,
-	UserInfo,
-	UserCreate,
+    Users,
+    UserInfo,
+    UserCreate,
 };

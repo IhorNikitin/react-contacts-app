@@ -7,57 +7,59 @@ export const initialState = {
 };
 
 export default function usersReducer(state = initialState, action) {
-	const { type, payload } = action;
-    
-	switch (type) {
+    const { type, payload } = action;
+
+    switch (type) {
     case types.FETCH_USERS:
         return {
             ...state,
             users: payload,
         };
-	
-	case types.DELETE_USER:
+
+    case types.DELETE_USER:
         return {
             ...state,
             users: state.users.filter(user => user.id !== payload),
         };
-		
-	case types.ADD_USER:
-	    let newUsers = state.users;
+
+    case types.ADD_USER:
+        let newUsers = state.users;
         newUsers.push(payload);
         return {
             ...state,
             users: [...newUsers],
         };
-		
-	case types.EDIT_USER:
+
+    case types.EDIT_USER:
         return {
             ...state,
             users: state.users.map(user => user.id !== payload.id
-			    ? {...user}
-				: {...payload}
-			),
+                ? {...user}
+                : {...payload}
+            ),
         };
-	
-	case types.UPGRADE_COUNT:
+
+    case types.UPGRADE_COUNT:
         return {
             ...state,
             count: payload.count,
         };
-		
-	case types.PLUS_COUNT:
+
+    case types.PLUS_COUNT:
+        let plusCount = state.count;
         return {
             ...state,
-            count: ++state.count,
+            count: ++plusCount,
         };
-	
-	case types.MINUS_COUNT:
+
+    case types.MINUS_COUNT:
+        let minusCount = state.count;
         return {
             ...state,
-            count: --state.count,
+            count: --minusCount,
         };
-	
-	case types.CHANGE_CURRENT_PAGE:
+
+    case types.CHANGE_CURRENT_PAGE:
         return {
             ...state,
             currentPage: payload,
