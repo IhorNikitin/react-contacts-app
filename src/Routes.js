@@ -9,9 +9,9 @@ class Routes extends Component {
         return (
             <Switch>
                 <Route exact path="/" component={MainPage} />
-				<Route exact path="/user/:id" component={UserInfo} />
-				<Route exact path="/create" component={UserCreate} />
-				<Route exact path="/edit/:id" component={UserCreate} />
+                <Route exact path="/user/:id" component={UserInfo} />
+                <Route exact path="/create" component={UserCreate} />
+                <Route exact path="/edit/:id" component={UserCreate} />
                 <Route path="*" component={NotFound} />
             </Switch>
         );

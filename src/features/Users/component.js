@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Users.scss';
+import styles from './component.scss';
 
 import User from './components/User';
 import Pagination from './components/Pagination';

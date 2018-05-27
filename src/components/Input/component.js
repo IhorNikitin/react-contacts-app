@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Input.scss';
+import styles from './component.scss';
 
 const Input = (props) => {
-    const { onChange, value='', placeholder='' } = props;
+    const { onChange, value, placeholder } = props;
 
     return (
         <input

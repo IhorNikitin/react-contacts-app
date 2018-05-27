@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Button.scss';
+import styles from './component.scss';
 
 const Button = (props) => {
     const { onClick, addClass, children } = props;
@@ -10,7 +10,9 @@ const Button = (props) => {
         <button
             className={`${styles.button} ${addClass}`}
             onClick={onClick}
-        >{children}</button>
+        >
+            {children}
+        </button>
     );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { SERVER_URL } from '../../../../constants';
 
-import styles from './User.scss';
+import styles from './component.scss';
 
 const User = ({ user, editUser, deleteUser, showUserDetails }) => (
     <div className={styles.user}>

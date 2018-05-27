@@ -6,6 +6,6 @@ import filter from './features/Filter/reducer';
 
 export default combineReducers({
     users,
-	filter,
+    filter,
     form,
 });
