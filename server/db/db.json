@@ -139,20 +139,12 @@
       "phoneGroup": "business",
       "email": "scarlett@usa.com",
       "skype": "scarlett",
-      "history": []
-    },
-    {
-      "id": 15,
-      "img": "assets/kunis.jpg",
-      "name": "Mila",
-      "surname": "Kunis",
-      "birthday": "20-01-1980",
-      "town": "Barselona",
-      "phone": "+44(188)259-45-45",
-      "phoneGroup": "project",
-      "email": "kunis@usa.com",
-      "skype": "kunis",
-      "history": []
+      "history": [
+        {
+          "date": "25-06-2018",
+          "time": "13.37"
+        }
+      ]
     },
     {
       "id": 16,
@@ -165,19 +157,6 @@
       "phoneGroup": "business",
       "email": "matty@usa.com",
       "skype": "mat",
-      "history": []
-    },
-    {
-      "id": 18,
-      "img": "assets/sandler.jpg",
-      "name": "Adam",
-      "surname": "Sandler",
-      "birthday": "20-01-1980",
-      "town": "Barselona",
-      "phone": "+44(188)259-45-45",
-      "phoneGroup": "business",
-      "email": "sandler@usa.com",
-      "skype": "sandler",
       "history": []
     }
   ]
