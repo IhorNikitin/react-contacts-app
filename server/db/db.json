@@ -1,30 +1,30 @@
 {
   "users": [
     {
+      "id": 1,
+      "img": "assets/pitt.jpg",
+      "name": "Brad",
+      "surname": "Pitt",
+      "birthday": "10-08-1964",
+      "town": "Boston",
+      "phone": "+1(123)200-27-11",
+      "phoneGroup": "office",
+      "email": "pitt@gmail.com",
+      "skype": "pittbrad",
+      "history": []
+    },
+    {
       "id": 2,
       "img": "assets/jolie.jpg",
-      "name": "Angelinochka",
+      "name": "Angelina",
       "surname": "Jolie",
       "birthday": "23-05-1977",
       "town": "Boston",
-      "phone": "+1(987)359-27-45",
+      "phone": "+1(123)359-27-45",
       "phoneGroup": "office",
       "email": "jolie@gmail.com",
       "skype": "angy",
-      "history": [
-        {
-          "date": "01-06-2018",
-          "time": "22.25"
-        },
-        {
-          "date": "25-06-2018",
-          "time": "11.47"
-        },
-        {
-          "date": "25-06-2018",
-          "time": "14.56"
-        }
-      ]
+      "history": []
     },
     {
       "id": 3,
@@ -37,12 +37,7 @@
       "phoneGroup": "friend",
       "email": "hanks@hanks.com",
       "skype": "hanky",
-      "history": [
-        {
-          "date": "01-06-2018",
-          "time": "22.25"
-        }
-      ]
+      "history": []
     },
     {
       "id": 4,
@@ -55,12 +50,33 @@
       "phoneGroup": "work",
       "email": "dicaprio@aol.com",
       "skype": "dicaprio",
-      "history": [
-        {
-          "date": "01-06-2018",
-          "time": "22.18"
-        }
-      ]
+      "history": []
+    },
+    {
+      "id": 5,
+      "img": "assets/smith.jpg",
+      "name": "Will",
+      "surname": "Smith",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "smith@smith.com",
+      "skype": "maninblack",
+      "history": []
+    },
+    {
+      "id": 6,
+      "img": "assets/affleck.jpg",
+      "name": "Ben",
+      "surname": "Affleck",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "affleck@usa.com",
+      "skype": "affleck",
+      "history": []
     },
     {
       "id": 7,
@@ -73,12 +89,33 @@
       "phoneGroup": "business",
       "email": "aniston@usa.com",
       "skype": "aniston",
-      "history": [
-        {
-          "date": "01-06-2018",
-          "time": "22.15"
-        }
-      ]
+      "history": []
+    },
+    {
+      "id": 8,
+      "img": "assets/bellucci.jpg",
+      "name": "Monica",
+      "surname": "Bellucci",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "bellucci@usa.com",
+      "skype": "belucci",
+      "history": []
+    },
+    {
+      "id": 9,
+      "img": "assets/carrey.jpg",
+      "name": "Jim",
+      "surname": "Carrey",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "carrey@usa.com",
+      "skype": "carrey1",
+      "history": []
     },
     {
       "id": 10,
@@ -117,12 +154,7 @@
       "phoneGroup": "friends",
       "email": "depp@usa.com",
       "skype": "depp",
-      "history": [
-        {
-          "date": "25-06-2018",
-          "time": "15.00"
-        }
-      ]
+      "history": []
     },
     {
       "id": 13,
@@ -148,12 +180,20 @@
       "phoneGroup": "business",
       "email": "scarlett@usa.com",
       "skype": "scarlett",
-      "history": [
-        {
-          "date": "25-06-2018",
-          "time": "13.37"
-        }
-      ]
+      "history": []
+    },
+    {
+      "id": 15,
+      "img": "assets/kunis.jpg",
+      "name": "Mila",
+      "surname": "Kunis",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "project",
+      "email": "kunis@usa.com",
+      "skype": "kunis",
+      "history": []
     },
     {
       "id": 16,
@@ -166,6 +206,37 @@
       "phoneGroup": "business",
       "email": "matty@usa.com",
       "skype": "mat",
+      "history": []
+    },
+    {
+      "id": 17,
+      "img": "assets/pattinson.jpg",
+      "name": "Rob",
+      "surname": "Pattinson",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "cinema",
+      "email": "robby@usa.com",
+      "skype": "robby",
+      "history": [
+        {
+          "date": "25-06-2018",
+          "time": "15.19"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "img": "assets/sandler.jpg",
+      "name": "Adam",
+      "surname": "Sandler",
+      "birthday": "20-01-1980",
+      "town": "Barselona",
+      "phone": "+44(188)259-45-45",
+      "phoneGroup": "business",
+      "email": "sandler@usa.com",
+      "skype": "sandler",
       "history": []
     }
   ]

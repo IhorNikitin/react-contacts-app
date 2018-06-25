@@ -15,6 +15,10 @@ class Pagination extends Component {
         if (this.props.itemCount !== nextProps.itemCount) {
             this.setState({ allPages: Math.ceil(nextProps.itemCount / ITEMS_PER_PAGE) });
         }
+        if (this.props.users !== nextProps.users && nextProps.users.length === 0) {
+            this.props.changeCurrentPage(this.props.currentPage - 1);
+            this.getUsersForPage(this.props.currentPage - 1);
+        }
     }
 
     changePage = (target) => {
