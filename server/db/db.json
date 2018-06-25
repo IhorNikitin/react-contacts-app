@@ -3,11 +3,11 @@
     {
       "id": 2,
       "img": "assets/jolie.jpg",
-      "name": "Angelina",
+      "name": "Angelinochka",
       "surname": "Jolie",
       "birthday": "23-05-1977",
       "town": "Boston",
-      "phone": "+1(123)359-27-45",
+      "phone": "+1(987)359-27-45",
       "phoneGroup": "office",
       "email": "jolie@gmail.com",
       "skype": "angy",
@@ -19,6 +19,10 @@
         {
           "date": "25-06-2018",
           "time": "11.47"
+        },
+        {
+          "date": "25-06-2018",
+          "time": "14.56"
         }
       ]
     },
@@ -113,7 +117,12 @@
       "phoneGroup": "friends",
       "email": "depp@usa.com",
       "skype": "depp",
-      "history": []
+      "history": [
+        {
+          "date": "25-06-2018",
+          "time": "15.00"
+        }
+      ]
     },
     {
       "id": 13,

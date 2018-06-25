@@ -4,38 +4,34 @@ import { connect } from 'react-redux';
 import { fetchUsersThunk, createUserThunk, upgradeUserThunk, changeCurrentPage } from '../Users/actions';
 import { USERPIC_DEFAULT } from '../../constants';
 import UserCreate from './component';
-import { validate } from '../../helpers';
 
 class UserCreateContainer extends Component {
-    state = {
-        error: '',
-    };
-
     createUser = (data) => {
-        this.setState({ error: '' });
-        let error = validate(data);
+        const defaultUser = {
+            img: USERPIC_DEFAULT,
+            name: '',
+            surname: '',
+            birthday: '',
+            town: '',
+            phone: '',
+            phoneGroup: 'friends',
+            email: '',
+            skype: '',
+            history: [],
+        };
 
-        if (!error) {
-            if (!this.props.match.params.id) {
-                data.img = USERPIC_DEFAULT;
-                data.history = [];
-                this.props.createUserThunk(data)
-                    .then(() => {
-                        this.props.history.push('/');
-                    });
-            } else {            
-                this.props.upgradeUserThunk(data)
-                    .then(() => {
-                        this.props.history.push('/');
-                    });
-            }
+        if (!this.props.match.params.id) {
+            const user = { ...defaultUser, ...data };
+            this.props.createUserThunk(user)
+                .then(() => {
+                    this.props.history.push('/');
+                });
         } else {
-            this.setState({ error });
+            this.props.upgradeUserThunk(data)
+                .then(() => {
+                    this.props.history.push('/');
+                });
         }
-    };
-
-    removeError = () => {
-        this.setState({ error: '' });
     };
 
     goBack = () => {
@@ -43,7 +39,6 @@ class UserCreateContainer extends Component {
     };
 
     render() {
-        const { error:errMsg } = this.state;
         const { users, match } = this.props;
         const user = match.params.id && users.length > 0
             ? users.find(item => item.id === +match.params.id)
@@ -53,9 +48,7 @@ class UserCreateContainer extends Component {
             <UserCreate
                 id={this.props.match.params.id}
                 user={user}
-                errMsg={errMsg}
                 goBack={this.goBack}
-                removeError={this.removeError}
                 createUser={this.createUser}
             />
         );
@@ -66,5 +59,5 @@ const mapStateToProps = (state) => ({ users: state.users.users });
 
 export default connect(
     mapStateToProps,
-    { fetchUsersThunk, createUserThunk, upgradeUserThunk, changeCurrentPage }
+    { fetchUsersThunk, createUserThunk, upgradeUserThunk, changeCurrentPage },
 )(UserCreateContainer);

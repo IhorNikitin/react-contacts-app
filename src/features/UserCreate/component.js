@@ -5,9 +5,10 @@ import { Field, reduxForm, initialize } from 'redux-form';
 import DocumentTitle from 'react-document-title';
 import PropTypes from 'prop-types';
 
-import styles from './component.scss';
+import { Button, ErrorField } from '../../components';
+import { validate } from '../../helpers';
 
-import { Button } from '../../components';
+import styles from './component.scss';
 
 class UserCreate extends Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class UserCreate extends Component {
     }
 
     render() {
-        const { id, errMsg, goBack, removeError, createUser, handleSubmit } = this.props;
+        const { id, goBack, createUser, handleSubmit } = this.props;
         const action = id ? 'Edit' : 'Create';
 
         return (
@@ -32,27 +33,25 @@ class UserCreate extends Component {
                             <h3 className={styles.formHeading}>{`${action} User`}</h3>
                             <div className={styles.unit}>
                                 <div className={styles.label}>
-                                    <label htmlFor='name'>Name: </label>
+                                    <label htmlFor='name'>* Name: </label>
                                 </div>
                                 <div className={styles.formInput}>
                                     <Field
-                                        component='input'
+                                        component={ErrorField}
                                         id='name'
                                         name='name'
-                                        onFocus={removeError}
                                     />
                                 </div>
                             </div>
                             <div className={styles.unit}>
                                 <div className={styles.label}>
-                                    <label htmlFor='surname'>Surname: </label>
+                                    <label htmlFor='surname'>* Surname: </label>
                                 </div>
                                 <div className={styles.formInput}>
                                     <Field
-                                        component='input'
+                                        component={ErrorField}
                                         id='surname'
                                         name='surname'
-                                        onFocus={removeError}
                                     />
                                 </div>
                             </div>
@@ -62,10 +61,9 @@ class UserCreate extends Component {
                                 </div>
                                 <div className={styles.formInput}>
                                     <Field
-                                        component='input'
+                                        component={ErrorField}
                                         id='birthday'
                                         name='birthday'
-                                        onFocus={removeError}
                                     />
                                 </div>
                             </div>
@@ -75,23 +73,21 @@ class UserCreate extends Component {
                                 </div>
                                 <div className={styles.formInput}>
                                     <Field
-                                        component='input'
+                                        component={ErrorField}
                                         id='town'
                                         name='town'
-                                        onFocus={removeError}
                                     />
                                 </div>
                             </div>
                             <div className={styles.unit}>
                                 <div className={styles.label}>
-                                    <label htmlFor='phone'>Phone: </label>
+                                    <label htmlFor='phone'>* Phone: </label>
                                 </div>
                                 <div className={styles.formInput}>
                                     <Field
-                                        component='input'
+                                        component={ErrorField}
                                         id='phone'
                                         name='phone'
-                                        onFocus={removeError}
                                     />
                                 </div>
                             </div>
@@ -101,10 +97,9 @@ class UserCreate extends Component {
                                 </div>
                                 <div className={styles.formInput}>
                                     <Field
-                                        component='input'
+                                        component={ErrorField}
                                         id='phoneGroup'
                                         name='phoneGroup'
-                                        onFocus={removeError}
                                     />
                                 </div>
                             </div>
@@ -114,10 +109,9 @@ class UserCreate extends Component {
                                 </div>
                                 <div className={styles.formInput}>
                                     <Field
-                                        component='input'
+                                        component={ErrorField}
                                         id='email'
                                         name='email'
-                                        onFocus={removeError}
                                     />
                                 </div>
                             </div>
@@ -127,27 +121,13 @@ class UserCreate extends Component {
                                 </div>
                                 <div className={styles.formInput}>
                                     <Field
-                                        component='input'
+                                        component={ErrorField}
                                         id='skype'
                                         name='skype'
-                                        onFocus={removeError}
                                     />
                                 </div>
                             </div>
-                            {
-                                errMsg
-                                    ? (
-                                        <div
-                                            className={styles.error}>
-                                            <i className="fas fa-exclamation-triangle" />
-                                            The form contains errors:
-                                            <ul className={styles.errorList}>
-                                                <li>{errMsg}</li>
-                                            </ul>
-                                        </div>
-                                    )
-                                    : null
-                            }
+                            <p className={styles.required}>* - <span>required</span></p>
                             <div className={styles.buttons}>
                                 <Button onClick={goBack}>Back</Button>
                                 <Button type="submit" addClass={styles.blueSkin}>{action}</Button>
@@ -163,20 +143,17 @@ class UserCreate extends Component {
 UserCreate.defaultProps = {
     user: {},
     id: '',
-    errMsg: '',
 };
 
 UserCreate.propTypes = {
     user: PropTypes.objectOf(PropTypes.any),
     id: PropTypes.string,
-    errMsg: PropTypes.string,
     createUser: PropTypes.func.isRequired,
     goBack: PropTypes.func.isRequired,
-    removeError: PropTypes.func.isRequired,
 };
 
 const withStore = connect(null, { initialize });
-const withForm = reduxForm({ form: 'simple' });
+const withForm = reduxForm({ form: 'simple', validate });
 
 export default compose(
     withStore,

@@ -11,7 +11,7 @@
 }
 
 .form {
-	width: 400px;
+	width: 410px;
 	padding: 15px 20px;
     margin: 0 auto;
 	background: #fff;
@@ -20,12 +20,13 @@
 }
 
 .unit {
+    display: flex;
     margin: 15px 0;
 }
 
 .label {
     display: inline-block;
-    width: 100px;
+    width: 110px;
     padding: 0 20px 0 0;
     box-sizing: border-box;
     text-align: right;
@@ -63,4 +64,14 @@
 
 .blueSkin {
   background: #4e69a2 !important;
+}
+
+.required {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 0 110px;
+}
+
+.required span {
+    color: red;
 }

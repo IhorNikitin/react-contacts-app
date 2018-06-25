@@ -5,6 +5,7 @@ import NotFound from './NotFound';
 import Button from './Button';
 import Input from './Input';
 import Modal from './Modal';
+import ErrorField from './ErrorField';
 
 export {
     Header,
@@ -14,4 +15,5 @@ export {
     Button,
     Input,
     Modal,
+    ErrorField,
 };
