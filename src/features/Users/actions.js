@@ -105,3 +105,7 @@ export const changeCurrentPage = payload => ({
     type: types.CHANGE_CURRENT_PAGE,
     payload,
 });
+
+export const changeIsModal = () => ({
+    type: types.IS_MODAL_SHOW,
+});

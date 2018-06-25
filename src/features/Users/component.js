@@ -7,7 +7,14 @@ import User from './components/User';
 import Pagination from './components/Pagination';
 import { Button } from '../../components';
 
-const Users = ({ users, count, createUser, deleteUser, editUser, showUserDetails }) => {
+const Users = ({
+                   users,
+                   count,
+                   createUser,
+                   handleDeleteID,
+                   editUser,
+                   showUserDetails,
+}) => {
     return (
         <section className={styles.users}>
             <div className={styles.buttonCreate}>
@@ -18,7 +25,7 @@ const Users = ({ users, count, createUser, deleteUser, editUser, showUserDetails
                 {
                     users.map(user =>
                         <User
-                            deleteUser={deleteUser.bind(this, user.id)}
+                            handleDeleteID={handleDeleteID.bind(this, user.id)}
                             editUser={editUser.bind(this, user.id)}
                             showUserDetails={showUserDetails.bind(this, user.id)}
                             key={user.id}
@@ -41,7 +48,7 @@ Users.propTypes = {
     users: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)),
     count: PropTypes.number,
     createUser: PropTypes.func.isRequired,
-    deleteUser: PropTypes.func.isRequired,
+    handleDeleteID: PropTypes.func.isRequired,
     editUser: PropTypes.func.isRequired,
     showUserDetails: PropTypes.func.isRequired,
 };

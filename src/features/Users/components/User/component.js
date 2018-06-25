@@ -4,7 +4,7 @@ import { SERVER_URL } from '../../../../constants';
 
 import styles from './component.scss';
 
-const User = ({ user, editUser, deleteUser, showUserDetails }) => (
+const User = ({ user, editUser, handleDeleteID, showUserDetails }) => (
     <div className={styles.user}>
         <div className={styles.icon}>
             <img src={`${SERVER_URL}/${user.img}`} alt="userpic" />
@@ -26,7 +26,7 @@ const User = ({ user, editUser, deleteUser, showUserDetails }) => (
         <div className={styles.controls}>
             <div className={styles.buttons}>
                 <i className="fas fa-pencil-alt" onClick={editUser} />
-                <i className="fas fa-trash-alt" onClick={deleteUser} />
+                <i className="fas fa-trash-alt" onClick={handleDeleteID} />
             </div>
         </div>
     </div>

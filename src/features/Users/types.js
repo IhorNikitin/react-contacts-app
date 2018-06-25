@@ -9,3 +9,5 @@ export const PLUS_COUNT = 'PLUS_COUNT';
 export const MINUS_COUNT = 'MINUS_COUNT';
 
 export const CHANGE_CURRENT_PAGE = 'CHANGE_CURRENT_PAGE';
+
+export const IS_MODAL_SHOW = 'IS_MODAL_SHOW';

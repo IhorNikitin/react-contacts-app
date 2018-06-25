@@ -4,6 +4,7 @@ export const initialState = {
   users: [],
   count: 0,
   currentPage: 1,
+  isModal: false,
 };
 
 export default function usersReducer(state = initialState, action) {
@@ -63,6 +64,12 @@ export default function usersReducer(state = initialState, action) {
         return {
             ...state,
             currentPage: payload,
+        };
+
+    case types.IS_MODAL_SHOW:
+        return {
+            ...state,
+            isModal: !state.isModal,
         };
 
     default:
