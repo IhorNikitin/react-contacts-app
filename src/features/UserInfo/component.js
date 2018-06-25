@@ -32,19 +32,23 @@ const UserInfo = ({ user, goBack }) => (
                     <div className={styles.personal}>
                         <p className={styles.subheading}><i className="fas fa-angle-down" />Personal</p>
                         <p className={styles.birthday}>
-                            <span><i className="fas fa-birthday-cake" /> Birthday: </span><span className={styles.value}>{user.birthday}</span>
+                            <span><i className="fas fa-birthday-cake" /> Birthday: </span>
+                            <span className={styles.value}>{user.birthday}</span>
                         </p>
                         <p className={styles.town}>
-                            <span><i className="fas fa-university" /> Town: </span><span className={styles.value}>{user.town}</span>
+                            <span><i className="fas fa-university" /> Town: </span>
+                            <span className={styles.value}>{user.town}</span>
                         </p>
                     </div>
                     <div className={styles.contacts}>
                         <p className={styles.subheading}><i className="fas fa-angle-down" />Contacts</p>
                         <p className={styles.email}>
-                            <span><i className="far fa-envelope" /> Email: </span><span className={styles.value}>{user.email}</span>
+                            <span><i className="far fa-envelope" /> Email: </span>
+                            <span className={styles.value}>{user.email}</span>
                         </p>
                         <p className={styles.skype}>
-                            <span><i className="fab fa-skype" /> Skype: </span><span className={styles.value}>{user.skype}</span>
+                            <span><i className="fab fa-skype" /> Skype: </span>
+                            <span className={styles.value}>{user.skype}</span>
                         </p>
                     </div>
                     <div className={styles.history}>

@@ -8,12 +8,12 @@ import Pagination from './components/Pagination';
 import { Button } from '../../components';
 
 const Users = ({
-                   users,
-                   count,
-                   createUser,
-                   handleDeleteID,
-                   editUser,
-                   showUserDetails,
+    users,
+    count,
+    createUser,
+    handleDeleteID,
+    editUser,
+    showUserDetails,
 }) => {
     return (
         <section className={styles.users}>

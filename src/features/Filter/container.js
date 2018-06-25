@@ -18,7 +18,7 @@ class FilterContainer extends Component {
             inputStr: e.target.value,
         });
     };
-	
+
     handlerSortBySurname = () => {
         if (!this.props.isSortBySurname) {
             this.props.fetchUsersThunk(`?_page=1&_limit=${ITEMS_PER_PAGE}&_sort=surname&_order=asc`)
@@ -38,14 +38,14 @@ class FilterContainer extends Component {
                 });
         }
     };
-	
+
     handlerSearchByAnyField = () => {
         const { inputStr } = this.state;
         let limit = '';
 
         if (!inputStr) {
             this.props.getAllUsersCount();
-			limit = ITEMS_PER_PAGE;
+            limit = ITEMS_PER_PAGE;
         } else {
             this.props.upgradeCount(0);
         }

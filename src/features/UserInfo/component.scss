@@ -1,6 +1,6 @@
 .userInfo {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
     min-height: calc(100vh - 140px);
 }
 
@@ -11,79 +11,79 @@
 }
 
 .heading {
-	margin: 0 0 20px;
-	text-align: center;
+    margin: 0 0 20px;
+    text-align: center;
 }
 
 .buttons {
-	text-align: center;
+    text-align: center;
 }
 
 .card {
     display: flex;
-	flex-flow: column nowrap;
-	width: 400px;
-	padding: 15px 20px;
+    flex-flow: column nowrap;
+    width: 400px;
+    padding: 15px 20px;
     margin: 30px auto 50px;
-	background: #fff;
-	box-sizing: border-box;
-	border-radius: 5px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .main {
-	flex: 0 0 100px;
-	display: flex;
-	flex-flow: row nowrap;
+    flex: 0 0 100px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .icon {
-	flex: 0 0 100px;
+    flex: 0 0 100px;
 
-	img {
-		width: 80px;
-		height: 80px;
-		border-radius: 10px;
-	}
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+    }
 }
 
 .fullname {
-	margin: 0;
-	font-size: 18px;
+    margin: 0;
+    font-size: 18px;
 }
 
 .phone {
-	margin: 5px 0 3px;
-	font-size: 14px;
+    margin: 5px 0 3px;
+    font-size: 14px;
 }
 
 .group {
-	font-size: 13px;
-	color: #ddd;
+    font-size: 13px;
+    color: #ddd;
 }
 
 .info {
-	flex: 0 0 300px;
-	padding: 0 10px;
-	box-sizing: border-box;
+    flex: 0 0 300px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .subheading {
-	font-size: 11px;
-	color: #ccc;
-	border-bottom: 1px solid #ccc;
+    font-size: 11px;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
 
-	i {
-		margin: 0 10px 0 0;
-	}
+    i {
+        margin: 0 10px 0 0;
+    }
 }
 
 .personal {
-	margin: 0 0 10px;
+    margin: 0 0 10px;
 
-	p {
-		margin: 0 0 5px;
-		padding: 3px 0;
-	}
+    p {
+        margin: 0 0 5px;
+        padding: 3px 0;
+    }
 }
 
 .contacts {
@@ -99,10 +99,10 @@
 }
 
 .history .date {
-	font-size: 13px;
-	color: #888;
+    font-size: 13px;
+    color: #888;
 }
 
 .value {
-	color: #888;
+    color: #888;
 }

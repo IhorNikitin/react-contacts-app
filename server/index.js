@@ -10,7 +10,7 @@ server.use((req, res, next) => {
     if (req.method === 'GET' && req.originalUrl === '/users/count') {
         const count = db.users.length;
         res.status(200);
-		res.json({'count': count});
+        res.json({'count': count});
     }
     else {
         next();
@@ -20,5 +20,5 @@ server.use((req, res, next) => {
 server.use(router);
 
 server.listen(3001, () => {
-  console.log('JSON Server is running')
+    console.log('JSON Server is running')
 });

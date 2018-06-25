@@ -13,7 +13,6 @@ import styles from './component.scss';
 class UserCreate extends Component {
     constructor(props) {
         super(props);
-
         props.initialize(props.user);
     }
 

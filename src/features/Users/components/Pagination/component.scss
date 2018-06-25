@@ -1,26 +1,26 @@
 .pagination {
-	width: 100%;
-	padding: 20px 20px 0 20px;
-	text-align: center;
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    text-align: center;
 }
 
 .paginationList {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .paginationList li {
-	display: inline-block;
-	margin: 0 5px;
-	padding: 5px 15px;
-	background: #aaa;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: bold;
-	color: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 15px;
+    background: #aaa;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .activePage {
-	background: #3b5998 !important;
+    background: #3b5998 !important;
 }

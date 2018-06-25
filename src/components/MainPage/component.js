@@ -16,5 +16,4 @@ const MainPage = (props) => (
     </DocumentTitle>
 );
 
-
 export default MainPage;
